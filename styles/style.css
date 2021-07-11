@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+
+body{
+    margin: 0%;
+    background-image: url("../images/home.jpg");
+}
+
+.home{
+    display: block;
+}
+
+.sorry{
+    display: none;
+}
+
+#go{
+    position: absolute;
+    margin-top: 10px;
+    left: 45%;
+    opacity: 0.5;
+    transition: all 0.6s ease-in-out;
+}
+
+#enter{
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-size: 40px;
+    opacity: 0.4;
+    position: absolute;
+    left: 28%;
+    top:33%;
+}
+
+#hide{
+    opacity: 0;
+}
+
+#go:hover{
+    font-size: 200px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 44%;
+    opacity: 0.7;
+}
+
+
+.gallery{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 900px;
+    min-width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    animation: fadeInAnimation ease 1.5s;
+    background-color: black;
+    
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+    }
+
+
+.images{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    max-width: 90%;
+    padding: 10px;
+    
+}
+
+.images img{
+    width: 1500px;
+    
+}
+
+
+.like-flex{
+    display: flex;
+    margin-top: 19%;
+    opacity: 0.7;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Yomogi', cursive;
+}
+   
+.like-flex div{
+    padding: 20px;
+    margin-left: 10px;
+    text-align: center;
+    color: rgb(228, 228, 228);
+}
+
+#hover{
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+}
+
+#hover:hover{
+    opacity: 1;
+    font-size: 60px;
+}
+h2{
+    opacity: 0.8;
+}
+
+#about p{
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 25px;
+    color: rgb(26, 26, 26);
+    font-family: 'Rajdhani', sans-serif;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 93%;
+}
+
+#abthover{
+    min-height: 70px;
+    min-width: 250px;
+    opacity: 0.5;
+    position: fixed;
+    margin-left: 90%;
+}
+
+#abthover_line{
+    min-height: 70px;
+    border: 1px solid black;
+    opacity: 0.2;
+    position: fixed;
+    margin-left: 91%;
+}
+
+
+/* on focus -- project description -- should be displayed on her back*/
+
+#showatback{
+    display: flex;
+    display: none;
+    align-items: center;
+    align-content: flex-end;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(199, 199, 199);
+    opacity: 0.4;
+    position: absolute;
+    left: 43%;
+    top:75%;
+    animation: fadeIn ease 3s 1;
+}
+#showatback div{
+    padding-top: 10px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.4;
+     }
+    }
+
+ 
+@media screen and (max-width:1024px){
+    .sorry{
+        display: block;
+    }
+    .home{
+        display: none;
+    }
+    body{
+        background: none;
+        background-color: rgb(255, 255, 255);
+    }
+    .sorry img{
+        width: 100%;
+        margin-top: 45%;
+    }
+
+    .sorry p{
+        position: absolute;
+        top: 17%;
+        opacity: 0.7;
+        margin-left: 8%;
+        font-family: 'Yomogi', cursive;
+    }
+}
